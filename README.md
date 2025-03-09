@@ -16,6 +16,8 @@ It is designed using **HTML, CSS, and JavaScript**.
 - Projects Showcase
 
 ## 💻 How To Use
+when You Open A Website Then please write on url bar Index.html
+
 1. Clone the repository:  
 ```bash
 git clone https://github.com/RajCoder9931/PortFolio-Website.git
