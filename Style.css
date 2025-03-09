@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=DM+Serif+Text:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body{
+    background-color: #f0f0f0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 45px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav.logo{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 25px;
+    color:rgb(32, 173, 184);
+}
+
+nav .navbar{
+    list-style: none;
+    display: flex;
+
+}
+.navbar li{
+    margin:0 15px;
+}
+
+.navbar li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    left: 0;
+    height: 2px;
+    background-color: #db0b0b;
+    transition: width 0.4s ease;
+    
+}
+.navbar li a:hover::after{
+    width:100%;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #323;
+    font-weight: 600;
+    position: relative;
+}
+
+.Container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+}
+.me{
+    max-width: 500px;
+
+}
+.me h1{
+    font-size: 30px;
+    animation: ;
+}
+
+.me p{
+    margin: 20px 0;
+}
+.me button{
+    background-color: #32a9b4;
+    margin-right: 15px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 7px;
+    /* color:#000000; */
+    cursor: pointer; 
+}
+.me button:hover{
+    background-color: #d81a0d;
+
+}
+.image img{
+    width: 400px;
+}
+.link a{
+    text-decoration: none;
+    margin-right: 15px; 
+    color:black;
+}
+.link a i{
+    font-size:25px;
+}
+.link .one:hover{
+    color:#FF4500;
+}
+.link .Two:hover{
+    color:#0d61cf;
+}
+.link .Three:hover{
+    color:#6e5494;
+}
+.link .Four:hover{
+    color:#f1860ce5;
+}
+.link .Five:hover{
+    color:#9e9a96;
+}
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    gap: 15px;
+}
+.myimage img{
+    width: 200px;
+    padding-bottom: 140px;
+}
+.des{
+    max-width: 600px;
+}
+.des h1{
+    font-size: 40px;
+
+}
+.des p{
+    margin: 10px 0;
+    color: #3558;
+}
+.icon img{
+    width: 40px;
+    margin: 10px 10px 10px 0;
+}
+.Service li{
+    list-style: none;
+
+    margin: 15px 0;
+}
+.Service li::before{
+    content: "\26B2";
+    font-size: 15px;
+    margin-right: 10px;
+    color: rgba(209, 30, 30, 0.6);
+}
+
+.Skills{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+.skillbar{
+    flex-basis: 50%;
+}
+.skillbar h1{
+    margin-bottom: 20px;
+    align-items: center;
+}
+.bar{
+    margin-bottom: 15px;
+}
+.bar p{
+    margin-bottom: 5px;
+}
+.progress-bar{
+    background-color: #f1c40f;
+    border-radius: 5px;
+    height: 10px;
+    width: 100%;
+}
+.progress-bar div{
+    display: block;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #0b4999e3;
+}
+.image-table img{
+    width: 350px;
+    border-radius: 50px;
+    
+}
+
+.Projects{
+    padding: 50px;
+
+}
+.Projects h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.Project-Container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.Card{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+}
+.Card img{
+    width: 80%;
+    height: 190px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.Card h2{
+    margin-bottom: 10px;
+}
+.Card p{
+    color: #777;
+    font-size: 15px;
+}
+.Card .meta{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.meta span{
+    color: #777;
+    font-size: 13px;
+}
+.Achievement{
+    padding: 50px;
+    text-align: center;
+}
+.Achievement h1{
+    margin-bottom: 20px;
+}
+.Archievement-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.arch-card{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.arch-card img{
+    width: 100px;
+    margin-bottom: 15px;
+}
+.arch-card h2{
+    margin-bottom: 10px;
+}
+.arch-card p{
+    color:#777;
+    font-size: 15px;
+}
+.Contact-Me{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Contact-Me img{
+    width: 180px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    padding-right: 25px;
+}
+.cont{
+    text-align: left;
+}
+.cont h1{
+    margin-bottom: 10px;
+}
+
+.cont p{
+    color: #777;
+    margin: 5px 0;
+}
